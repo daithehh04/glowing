@@ -10,6 +10,18 @@
     .header-action-btn:nth-child(3) {
         display: none;
     }
+    .header-top.active {
+        position: fixed;
+        top: -80px;
+        bottom: auto;
+        box-shadow: var(--shadow-1);
+        transform: translateY(100%);
+        transition: var(--transition-2);
+    }
+    .header-top.header-hide {
+        box-shadow: none;
+        transform: translateY(0);
+      }
     .navbar {
         display: none;
     }
@@ -24,19 +36,6 @@
     .hero-text {
         max-width: 30ch;
     }
-
-    .header-top.active {
-        position: fixed;
-        top: -80px;
-        bottom: auto;
-        box-shadow: var(--shadow-1);
-        transform: translateY(100%);
-        transition: var(--transition-2);
-    }
-    .header-top.header-hide {
-        box-shadow: none;
-        transform: translateY(0);
-      }
       
 }
 
@@ -57,6 +56,7 @@
         min-width: calc(50% - 15px);
     }
 
+    /* FEATURE */
     .feature .flex-list {
         display: grid;
         gap: 30px;
@@ -66,10 +66,12 @@
         max-width: calc(50% - 15px);
     }
 
+    /* OFFER */
     .offer .container {
         display: block;
     }
 
+    /* BLOG */
     .blog .flex-item {
         max-width: calc(50% - 15px);
     }
@@ -78,6 +80,7 @@
         flex-wrap: wrap;
     }
 
+    /* FOOTER */
     .footer-top {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 60px;
@@ -97,15 +100,18 @@
         width: 100%;
         margin-inline: auto;
     }
-
+    /* BANNER */
     .banner-list {
         grid-template-columns: repeat(1,1fr);
     }
 
+    /* BLOG */
     .feature .flex-item,
     .blog .flex-item {
         max-width: 100%;
     }
+
+    /* FOOTER */
     .footer-list:last-child {
         grid-column: unset;
     }
@@ -128,20 +134,26 @@
         min-width:100%;
     }
 
+    /* HERO */
     .hero-card {
         padding: 100px 15px;
     }
     .header-top .container {
         padding: 0 15px;
     }
+
+    /* SHOP */
     .shop .title-wrapper {
         display: grid;
         gap: 18px;
     }
 
+    /* BANNER */
     .banner-card {
         padding: 30px;
     }
+
+    /* OFFER */
     .offer-banner {
         margin-bottom: 60px;
     }
@@ -151,6 +163,8 @@
     .offer .time:not(:last-child)::after {
         margin: 0 10px;
     }
+
+    /* FOOTER */
     .footer-bottom .wrapper {
         display: grid;
         gap: 15px;
